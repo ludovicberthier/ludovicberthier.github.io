@@ -1,0 +1,136 @@
+<HTML>
+
+<HEAD>
+<TITLE>Try the glassotron!</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+<!---Cache cache partie !
+function pipotron()
+	{
+	chaine ='' ;
+	i = document.forme.pipo1.selectedIndex ;
+	chaine1 = document.forme.pipo1.options[i].value ;
+	i = document.forme.pipo2.selectedIndex ;
+	chaine2 = document.forme.pipo2.options[i].value ;
+	i = document.forme.pipo3.selectedIndex ;
+	chaine3 = document.forme.pipo3.options[i].value ;
+
+	chaine = chaine1 + ' ' + chaine2 + ' ' + chaine3 + '.' ; ;
+	document.forme.texte.value = chaine ;
+	} ;
+
+function hasard()
+	{
+	if (navigator.appCodeName == "Mozilla" && eval(navigator.appVersion.substring(0,3)) >= 3)
+	{
+	i = Math.random() ;
+	i = Math.floor(15*i) ;
+	document.forme.pipo1.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(13*i) ;
+	document.forme.pipo2.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo3.selectedIndex = i ;
+	pipotron() ;
+	}
+	else
+	{alert("\nDésolé, je ne fonctionne qu'avec Netscape 3.0 et plus.\nSeule la version manuelle du Pipotron est disponible.") ; }	
+	}	
+//------->
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="white">
+<CENTER>
+<H2>Glassotron: Make Your Own Glass Theory</H2>
+</CENTER>
+<P>
+<CENTER>
+<FORM METHOD="POST" ACTION="" NAME="forme">
+<TEXTAREA NAME="texte" ROWS="3" COLS="71" WRAP=VIRTUAL>
+Try the Glassotron!</TEXTAREA>
+<P>
+<INPUT TYPE="button" VALUE=" Glassotron " OnClick="hasard()">
+<P>
+<TABLE BORDER=1 CELLPADDING="6">
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo1" SIZE="15" OnChange="pipotron()">
+	<OPTION VALUE="Activated">Activated
+	<OPTION VALUE="Broadly-distributed">Broadly-distributed
+	<OPTION VALUE="Collective">Collective
+	<OPTION VALUE="Complex">Complex
+	<OPTION VALUE="Configurational">Configurational
+	<OPTION VALUE="Constrained">Constrained
+	<OPTION VALUE="Cooperative">Cooperative
+	<OPTION VALUE="Disordered">Disordered
+	<OPTION VALUE="Effective">Effective
+	<OPTION VALUE="Ultrastable">Ultrastable
+	<OPTION VALUE="Frustrated" SELECTED>Frustrated
+	<OPTION VALUE="Heterogeneous">Heterogeneous
+	<OPTION VALUE="Hierarchical">Hierarchical
+	<OPTION VALUE="Inherent">Inherent
+	<OPTION VALUE="Out of equilibrium">Out of equilibrium
+
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo2" SIZE="15" OnChange="pipotron()">
+	<OPTION VALUE="cluster" SELECTED>cluster
+	<OPTION VALUE="droplet" SELECTED>droplet
+	<OPTION VALUE="energy">energy
+	<OPTION VALUE="entropy" SELECTED>entropy
+	<OPTION VALUE="free energy" SELECTED>free energy
+	<OPTION VALUE="hopping">hopping
+	<OPTION VALUE="landscape" SELECTED>landscape
+	<OPTION VALUE="rearranging domains">rearranging domains
+	<OPTION VALUE="relaxation">relaxation
+	<OPTION VALUE="renormalization group" SELECTED>renormalization group
+	<OPTION VALUE="replica" SELECTED>replica
+	<OPTION VALUE="temperature">temperature
+	<OPTION VALUE="structure">structure
+
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo3" SIZE="15" OnChange="pipotron()">
+	<OPTION VALUE="analysis" SELECTED>analysis
+	<OPTION VALUE="approximation" SELECTED>approximation
+	<OPTION VALUE="conjecture" SELECTED>conjecture
+	<OPTION VALUE="construction" SELECTED>construction
+	<OPTION VALUE="paradigm">paradigm
+	<OPTION VALUE="picture">picture
+	<OPTION VALUE="process">process
+	<OPTION VALUE="scenario" SELECTED>scenario
+	<OPTION VALUE="theorem" SELECTED>theorem
+	<OPTION VALUE="theory">theory
+
+</SELECT>
+</TABLE>
+<BR>
+</FORM>
+
+</BODY>
+
+</CENTER>
+
+<BR>
+<P ALIGN=JUSTIFY><FONT SIZE=+3><B>I</B></FONT>n collaboration with Jorge Kurchan [1], we have worked out `The Famous 
+Glassotron' (TFG). It can be extremely useful before the next
+unifying conference on the topic.
+For you, it is available for free. 
+It is still far from perfect, so feel free to send me your suggestions.
+<BR><FONT SIZE=+3></FONT><B></B>
+<BR>
+[1] L. Berthier and J. Kurchan, <i>The Famous Glassotron</i>, submitted to 
+Nature (2002).
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR><i>Updated May 2002</i>
+
+</HTML>
+
+

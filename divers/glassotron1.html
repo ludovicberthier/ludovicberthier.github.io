@@ -1,0 +1,222 @@
+<HTML>
+
+<HEAD>
+<TITLE>Le pipotron</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+<!---Cache cache partie !
+function pipotron()
+	{
+	chaine ='' ;
+	i = document.forme.pipo1.selectedIndex ;
+	chaine1 = document.forme.pipo1.options[i].value ;
+	i = document.forme.pipo2.selectedIndex ;
+	chaine2 = document.forme.pipo2.options[i].value ;
+	i = document.forme.pipo3.selectedIndex ;
+	chaine3 = document.forme.pipo3.options[i].value ;
+	i = document.forme.pipo4.selectedIndex ;
+	chaine4 = document.forme.pipo4.options[i].value ;
+	i = document.forme.pipo5.selectedIndex ;
+	chaine5 = document.forme.pipo5.options[i].value ;
+	i = document.forme.pipo6.selectedIndex ;
+	chaine6 = document.forme.pipo6.options[i].value ;
+	i = document.forme.pipo7.selectedIndex ;
+	chaine7 = document.forme.pipo7.options[i].value ;
+	i = document.forme.pipo8.selectedIndex ;
+	chaine8 = document.forme.pipo8.options[i].value ;
+
+	if (chaine4.charAt(chaine4.length-1) == '#')
+	{
+	chaine4 = chaine4.substring(0, chaine4.length-1) ;
+	aux = 'aeiouyhéè' ;
+	boule = false ;
+	for (j = 0 ; j<aux.length ; j++)
+		{if (chaine5.charAt(0) == aux.charAt(j)) {boule = true} ;} ;
+	if (boule)  {liaison = "'"} else {liaison = "e "} ;
+	}
+	else
+	liaison =' ' ;	
+
+	chaine = chaine1 + ' ' + chaine2 + ' ' + chaine3 + ', ' + chaine4 + liaison + chaine5 + ' ' + chaine6 + ' ' + chaine7 + ' ' + chaine8 + '.' ; ;
+	document.forme.texte.value = chaine ;
+	} ;
+
+function hasard()
+	{
+	if (navigator.appCodeName == "Mozilla" && eval(navigator.appVersion.substring(0,3)) >= 3)
+	{
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo1.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo2.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo3.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo4.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo5.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo6.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo7.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(10*i) ;
+	document.forme.pipo8.selectedIndex = i ;
+	pipotron() ;
+	}
+	else
+	{alert("\nDésolé, je ne fonctionne qu'avec Netscape 3.0 et plus.\nSeule la version manuelle du Pipotron est disponible.") ; }	
+	}	
+//------->
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="white">
+<CENTER>
+<H2>Glassotron: Make Your Own Glass Theory</H2>
+</CENTER>
+<P>
+<CENTER>
+<FORM METHOD="POST" ACTION="" NAME="forme">
+<TEXTAREA NAME="texte" ROWS="3" COLS="71" WRAP=VIRTUAL>
+Try the Glassotron!</TEXTAREA>
+<P>
+<INPUT TYPE="button" VALUE=" Glassotron " OnClick="hasard()">
+<P>
+<TABLE BORDER=1 CELLPADDING="5">
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo1" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="frustrated" SELECTED>Frustrated
+	<OPTION VALUE="cooperative">Cooperative
+	<OPTION VALUE="broadly-distributed">broadly-distributed
+	<OPTION VALUE="activated">activated
+	<OPTION VALUE="hierarchical">Hierarchical
+	<OPTION VALUE="inherent">Inherent
+	<OPTION VALUE="complex">Complex
+	<OPTION VALUE="Quelle que soit">Quelle que soit
+	<OPTION VALUE="Du fait de">Du fait de
+	<OPTION VALUE="Tant que durera">Tant que durera
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo2" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="la situation" SELECTED>la situation
+	<OPTION VALUE="la conjoncture">la conjoncture
+	<OPTION VALUE="la crise">la crise
+	<OPTION VALUE="l'inertie">l'inertie
+	<OPTION VALUE="l'impasse">l'impasse
+	<OPTION VALUE="l'extrémité">l'extrémité
+	<OPTION VALUE="la dégradation des moeurs">la dégradation des moeurs
+	<OPTION VALUE="la sinistrose">la sinistrose
+	<OPTION VALUE="la dualité de la situation">la dualité de la situation
+	<OPTION VALUE="la baisse de confiance">la baisse de confiance
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo3" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="présente" SELECTED>présente
+	<OPTION VALUE="actuelle">actuelle
+	<OPTION VALUE="qui nous occupe">qui nous occupe
+	<OPTION VALUE="qui est la nôtre">qui est la nôtre
+	<OPTION VALUE="induite">induite
+	<OPTION VALUE="conjoncturelle">conjoncturelle
+	<OPTION VALUE="contemporaine">contemporaine
+	<OPTION VALUE="de cette fin de siècle">de cette fin de siècle
+	<OPTION VALUE="de la société">de la société
+	<OPTION VALUE="de ces derniers temps">de ces derniers temps
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo4" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="il convient d#" SELECTED>il convient de
+	<OPTION VALUE="il faut">il faut
+	<OPTION VALUE="on se doit d#">on se doit de
+	<OPTION VALUE="il est préférable d#">il est préférable de
+	<OPTION VALUE="il serait intéressant d#">il serait intéressant de
+	<OPTION VALUE="il ne faut pas négliger d#">il ne faut pas négliger de
+	<OPTION VALUE="on ne peut se passer d#">on ne peut se passer de
+	<OPTION VALUE="il est nécessaire d#">il est nécessaire de
+	<OPTION VALUE="il serait bon d#">il serait bon de
+	<OPTION VALUE="il faut de toute urgence">il faut de toute urgence
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo5" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="étudier" SELECTED>étudier
+	<OPTION VALUE="examiner">examiner
+	<OPTION VALUE="ne pas négliger">ne pas négliger
+	<OPTION VALUE="prendre en considération">prendre en considération
+	<OPTION VALUE="anticiper">anticiper
+	<OPTION VALUE="imaginer">imaginer
+	<OPTION VALUE="se préoccuper de">se préoccuper de
+	<OPTION VALUE="s'intéresser à">s'intéresser à
+	<OPTION VALUE="avoir à l'esprit">avoir à l'esprit
+	<OPTION VALUE="se remémorer">se remémorer
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo6" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="toutes les" SELECTED>toutes les
+	<OPTION VALUE="chacune des">chacune des
+	<OPTION VALUE="la majorité des">la majorité des
+	<OPTION VALUE="toutes les">toutes les
+	<OPTION VALUE="l'ensemble des">l'ensemble des
+	<OPTION VALUE="la somme des">la somme des
+	<OPTION VALUE="la totalité des">la totalité des
+	<OPTION VALUE="la globalité des">la globalité des
+	<OPTION VALUE="toutes les">toutes les
+	<OPTION VALUE="certaines">certaines
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo7" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="solutions" SELECTED>solutions
+	<OPTION VALUE="issues">issues
+	<OPTION VALUE="problématiques">problématiques
+	<OPTION VALUE="voies">voies
+	<OPTION VALUE="alternatives">alternatives
+	<OPTION VALUE="solutions">solutions
+	<OPTION VALUE="issues">issues
+	<OPTION VALUE="problématiques">problématiques
+	<OPTION VALUE="voies">voies
+	<OPTION VALUE="alternatives">alternatives
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo8" SIZE="10" OnChange="pipotron()">
+	<OPTION VALUE="envisageables" SELECTED>envisageables
+	<OPTION VALUE="possibles">possibles
+	<OPTION VALUE="déjà en notre possession">déjà en notre possession
+	<OPTION VALUE="s'offrant à nous">s'offrant à nous
+	<OPTION VALUE="de bon sens">de bon sens
+	<OPTION VALUE="envisageables">envisageables
+	<OPTION VALUE="possibles">possibles
+	<OPTION VALUE="déjà en notre possession">déjà en notre possession
+	<OPTION VALUE="s'offrant à nous">s'offrant à nous
+	<OPTION VALUE="de bon sens">de bon sens
+</SELECT>
+</TD>
+
+
+
+</TR>
+</TABLE>
+<BR>
+</FORM>
+
+</BODY>
+
+</HTML>
+
+
