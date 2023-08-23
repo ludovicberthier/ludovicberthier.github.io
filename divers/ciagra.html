@@ -1,0 +1,140 @@
+<HTML>
+
+<HEAD>
+<TITLE>Get bigger with Ciagra</TITLE>
+<SCRIPT LANGUAGE="Javascript">
+<!---Cache cache partie !
+function pipotron()
+	{
+	chaine ='' ;
+	i = document.forme.pipo1.selectedIndex ;
+	chaine1 = document.forme.pipo1.options[i].value ;
+	i = document.forme.pipo2.selectedIndex ;
+	chaine2 = document.forme.pipo2.options[i].value ;
+	i = document.forme.pipo3.selectedIndex ;
+	chaine3 = document.forme.pipo3.options[i].value ;
+	i = document.forme.pipo4.selectedIndex ;
+	chaine4 = document.forme.pipo4.options[i].value ;
+	i = document.forme.pipo5.selectedIndex ;
+	chaine5 = document.forme.pipo5.options[i].value ;
+	
+	chaine = 'Dear ' + chaine1 + ',                                                                                       I have read your ' + chaine3 + ' with ' + chaine2 + '. I would like to call your attention to my ' + chaine4 + ' article (ref) which contains a treatment not unlike yours. Please cite my work appropriately.' + '                                                                                 ' + chaine5 ; ; 
+	document.forme.texte.value = chaine ;
+        } ;
+
+function hasard()
+	{
+	if (navigator.appCodeName == "Mozilla" && eval(navigator.appVersion.substring(0,3)) >= 3)
+	{
+	i = Math.random() ;
+	i = Math.floor(4*i) ;
+	document.forme.pipo1.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(4*i) ;
+	document.forme.pipo2.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(4*i) ;
+	document.forme.pipo3.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(4*i) ;
+	document.forme.pipo4.selectedIndex = i ;
+	i = Math.random() ;
+	i = Math.floor(4*i) ;
+	document.forme.pipo5.selectedIndex = i ;
+	pipotron() ;
+	}
+	else
+	{alert("\nDésolé, je ne fonctionne qu'avec Netscape 3.0 et plus.\nSeule la version manuelle du Pipotron est disponible.") ; }	
+	}	
+//------->
+</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="white">
+<br>
+<CENTER>
+<H2>Ciagra: Make Your H-Index Grow!</H2>
+</CENTER>
+<P>
+
+<P ALIGN=JUSTIFY>
+Fed up with people not citing your work?
+Can't keep
+your friends because your H-index is too small?
+<br>
+<FONT SIZE=+3><B>Ciagra</B></FONT> is for you! In just a few clicks, you
+will increase your H-index and make new friends!  
+<BR>
+Click on 'Cite me!' and send an email. It's as simple as that, and ABSOLUTELY FREE!
+<FONT SIZE=+3></FONT><B></B>
+
+<CENTER>
+
+<P>
+<INPUT TYPE="button" VALUE=" Cite me! " OnClick="hasard()">
+<P>
+
+
+<FORM METHOD="POST" ACTION="" NAME="forme">
+<TEXTAREA NAME="texte" ROWS="7" COLS="70" WRAP=VIRTUAL>
+Request a citation!</TEXTAREA>
+
+<br>
+<br><br>
+
+<TABLE BORDER=1 CELLPADDING="5">
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo1" SIZE="4" OnChange="pipotron()">
+	<OPTION VALUE="colleague" SELECTED>colleague
+	<OPTION VALUE="friend">friend
+	<OPTION VALUE="asshole">asshole
+	<OPTION VALUE="author">author  
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo2" SIZE="4" OnChange="pipotron()">
+	<OPTION VALUE="interest" SELECTED>interest
+	<OPTION VALUE="anger">anger
+	<OPTION VALUE="jealousy">jealousy
+	<OPTION VALUE="disdain">disdain
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo3" SIZE="4" OnChange="pipotron()">
+	<OPTION VALUE="piece of shit" SELECTED>piece of shit
+	<OPTION VALUE="work">work
+	<OPTION VALUE="article">article
+	<OPTION VALUE="comment">comment
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>
+<SELECT TYPE="radio" NAME="pipo4" SIZE="4" OnChange="pipotron()">
+	<OPTION VALUE="much nicer" SELECTED>much nicer
+	<OPTION VALUE="well-cited">well-cited
+	<OPTION VALUE="beautiful">beautiful
+	<OPTION VALUE="elegant">elegant
+</SELECT>
+</TD>
+<TD>
+<SELECT TYPE="radio" NAME="pipo5" SIZE="4" OnChange="pipotron()">
+	<OPTION VALUE="Best wishes." SELECTED>Best wishes.
+	<OPTION VALUE="Am I clear?">Am I clear?
+	<OPTION VALUE="Fuck you!">Fuck you!
+	<OPTION VALUE="Thanks.">Thanks.
+</SELECT>
+</TD>
+</TR>
+</TABLE>
+<BR>
+</FORM>
+
+</BODY>
+
+
+
+</HTML>
+
+
